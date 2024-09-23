@@ -1,0 +1,78 @@
+@mixin padding-page {
+    padding: 15px;
+    padding: 15px;
+}
+*{
+    // Position & Agencement
+    // Taille & Espacement
+
+    // Texte & Couleur
+
+    // Visibilité & Effets
+    box-sizing: border-box;  
+    margin: 0;
+}
+html {
+    font-size: 62.5%; //Permet d'utiliser les em sur une base 10
+    color: #FFFFFF;  
+}
+.header {
+    // Position & Agencement
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // Taille & Espacement
+    padding: 20px 100px;
+
+    // Texte & Couleur
+    font-size:  1.8em;
+    background-color: #8C6C3D;
+
+    &__nom {
+        // Texte & Couleur
+        text-decoration: none;
+        color: #000;
+    }
+    &__nav {
+        // Position & Agencement
+        display: flex;
+        flex-direction: row;
+
+        li {
+            // Taille & Espacement
+            padding-right: 10px;
+
+            // Texte & Couleur
+            list-style: none;
+        }
+    }
+}
+.main {
+   padding: 0 ;
+}
+.banniere {
+    // Position & Agencement
+    display: flex;
+    flex-direction: row;
+
+    // Taille & Espacement
+    width: 100%;
+    height: 100vh;
+    padding: 0 100px;
+
+    // Texte & Couleur
+    background-color: #8C6C3D;
+
+    &__desc {
+        width: 50%;       
+        font-size: 4em;
+        color: white;
+        align-self: center;        
+    }
+    &__img {
+        width: 50%;
+        object-fit: contain;
+    }
+}
