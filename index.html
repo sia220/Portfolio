@@ -1,28 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="./css/style.css"></head>
-        <body>
-            <header class="header">
-                <a class="header__nom" href="/">SADIA E.</a>
-                <ul class="header__nav">
-                    <li>A PROPOS</li>
-                    <li>PROJETS</li>
-                    <li>COMPETENCES</li>
-                    <li>CONTACT</li>
-                </ul>
-            </header> 
-            <main class="main">
-                <section class="banniere">
-                    <p class="banniere__desc">Bonjour, <br>  Je suis Sadia E. et <br> Développeuse Web. </p>
-                    <img class="banniere__img" src="./assets/3d-code.png" alt="">
-                </section>
-            </main>   
-            <footer>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Portfolio</title>
+      <link rel="stylesheet" href="./css/style.css" />
+   </head>
+   <body>
+      <header class="header">
+         <a class="header__nom" href="/">SADIA E.</a>
+         <ul class="header__nav">
+            <li>
+               <a href="#propos">A PROPOS</a>
+            </li>
+            <li>
+               <a href="#projets">PROJETS</a>
+            </li>
+            <li>
+               <a href="#competences">COMPETENCES</a>
+            </li>
+            <li>
+               <a href="#contact">CONTACT</a>
+            </li>
+         </ul>
+      </header>
 
-            </footer>
-        </body>
+      <main class="main">
+         <section id="propos" class="banniere">
+            <h1 class="banniere__desc">
+               Bonjour,
+               <br />
+               Je suis Sadia E. , Développeuse Web,
+               <br />
+               je développe des sites vitrines sur mesure.
+            </h1>
+            <img class="banniere__img" src="./assets/3d-code.png" alt="" />
+         </section>
+         <section id="projets" class="projets">
+            <h2 class="titre-section">Projets</h2>
+            <div class="projet projet1">
+               <a target="_blank" href="https://github.com/sia220/Kasa-"><img class="projet__img projet1__img" src="assets/banniere-code.jpg" alt="" /></a>
+               <div class="projet__txt projet1__txt">
+                  <h2 class="projet__txt__titre projet1__txt__titre">Kasa</h2>
+                  <p class="projet__txt__desc projet1__txt__desc">Site web de reservation d'appartements avec React</p>
+               </div>
+            </div>
+            <div class="projet projet2">
+               <a target="_blank" href="https://github.com/sia220/Piiquante"><img class="projet__img projet2__img" src="assets/banniere-code.jpg" alt="" /></a>
+               <div class="projet__txt projet2__txt">
+                  <h2 class="projet__txt__titre projet2__txt__titre">Piiquante</h2>
+                  <p class="projet__txt__desc projet2__txt__desc">
+                     J'ai codé le backend de cette application web de notation de sauces piquantes. Chaque utilisateur peut créer un compte, se connecter, ajouter une sauce
+                     qui sera visible par tous les autres utilisateurs, noter les sauces des autres utilisateurs. Le backend a été codé en NodeJS et Express en utilisant la
+                     base de données MongoDB.
+                  </p>
+               </div>
+            </div>
+            <div class="projet projet3">
+               <a target="_blank" href="https://github.com/sia220/Kanap"><img class="projet__img projet3__img" src="assets/banniere-code.jpg" alt="" /></a>
+               <div class="projet__txt projet3__txt">
+                  <h2 class="projet__txt__titre projet3__txt__titre">Kanap</h2>
+                  <p class="projet__txt__desc projet3__txt__desc">Site web de commande de canapés avec JavaScript et le localStorage.</p>
+               </div>
+            </div>
+         </section>
+         <section id="competences" class="competences">
+            <h2 class="titre-section">Compétences</h2>
+            <div class="competences__logos">
+               <div class="skill"><img src="./assets/html-5-logo-svgrepo-com.svg" alt="logo HTML5" /></div>
+               <div class="skill"><img src="./assets/css-3-logo-svgrepo-com.svg" alt="logo CSS3" /></div>
+               <div class="skill"><img src="./assets/javascript-logo-svgrepo-com.svg" alt=" logo javascript" /></div>
+               <div class="skill"><img src="./assets/react-svgrepo-com.svg" alt=" logo react" /></div>
+               <div class="skill"><img src="assets/nodejs-1-logo-svgrepo-com.svg" alt="logo Node.js" /></div>
+               <div class="skill"><img src="./assets/mongodb-logo-svgrepo-com.svg" alt="logo MongoDB" /></div>
+               <div class="skill"><img src="./assets/api-svgrepo-com.svg" alt="API REST" /></div>
+               <div class="skill"><img src="./assets/seo-svgrepo-com.svg" alt=" logo seo" /></div>
+            </div>
+         </section>
+         <section id="contact" class="contact">
+            <h2 class="titre-section">Contact</h2>
+            <p class="contact__txt">Contactez moi pour discuter de vos besoins en developpement :</p>
+            <div class="contact__logos">
+               <a href="mailto:Esadia@hotmail.fr" target="_blank"><img class="contact__logos__logo" src="./assets/ms-outlook-svgrepo-com.svg" alt="Outlook" /></a>
+               <a href="https://www.linkedin.com/in/sadia-e/" target="_blank"
+                  ><img class="contact__logos__logo" src="./assets/linkedin-icon-2-logo-svgrepo-com.svg" alt="LinkedIn"
+               /></a>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <p class="footer__copyright">© 2024 Sadia E. Site personnel. Code et design réalisés avec passion.</p>
+         <p class="footer__credits">
+            Credits :
+            <br />
+            Illustration par<a href="https://icons8.com">Icons8</a>sur Ouch!
+            <br />
+            Vectors and icons by <a href="https://github.com/garudatechnologydevelopers/sketch-icons?ref=svgrepo.com" target="_blank">Garuda Technology</a> in MIT License via
+            <a href="https://www.svgrepo.com/" target="_blank">SVG Repo</a>
+            <br />
+         </p>
+      </footer>
+   </body>
 </html>
