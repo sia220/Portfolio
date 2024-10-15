@@ -3,46 +3,56 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Portfolio</title>
+      <title>Portfolio de Sadia</title>
+      <link rel="stylesheet" href="./css/normalize.css" />
       <link rel="stylesheet" href="./css/style.css" />
+      <link rel="icon" href="./assets/3d-laptop.png" />
    </head>
    <body>
       <header class="header">
          <a class="header__nom" href="/">SADIA E.</a>
-         <ul class="header__nav">
-            <li>
-               <a href="#propos">A PROPOS</a>
+         <ul class="header__navbar">
+            <li class="header__navbar__item">
+               <a class="header__navbar__item__link" href="#propos">A PROPOS</a>
             </li>
-            <li>
-               <a href="#projets">PROJETS</a>
+            <li class="header__navbar__item">
+               <a class="header__navbar__item__link" href="#projets">PROJETS</a>
             </li>
-            <li>
-               <a href="#competences">COMPETENCES</a>
+            <li class="header__navbar__item">
+               <a class="header__navbar__item__link" href="#competences">COMPETENCES</a>
             </li>
-            <li>
-               <a href="#contact">CONTACT</a>
+            <li class="header__navbar__item">
+               <a class="header__navbar__item__link" href="#contact">CONTACT</a>
             </li>
          </ul>
       </header>
 
       <main class="main">
          <section id="propos" class="banniere">
-            <h1 class="banniere__desc">
-               Bonjour,
-               <br />
-               Je suis Sadia E. , Développeuse Web,
-               <br />
-               je développe des sites vitrines sur mesure.
-            </h1>
+            <div class="banniere__texte">
+               <h1 class="banniere__texte__titre">
+                  Bonjour,
+                  <br />
+                  Je suis Sadia E.,
+                  <br />
+                  votre Développeuse Web.
+               </h1>
+               <p class="banniere__texte__desc">Je développe des sites vitrines sur mesure.</p>
+               <button class="banniere__texte__bouton">Contact</button>
+            </div>
             <img class="banniere__img" src="./assets/3d-code.png" alt="" />
          </section>
          <section id="projets" class="projets">
             <h2 class="titre-section">Projets</h2>
             <div class="projet projet1">
-               <a target="_blank" href="https://github.com/sia220/Kasa-"><img class="projet__img projet1__img" src="assets/banniere-code.jpg" alt="" /></a>
+               <a target="_blank" href="https://github.com/sia220/Kasa-">
+                  <img class="projet__img projet1__img" src="assets/banniere-code.jpg" alt="" />
+               </a>
                <div class="projet__txt projet1__txt">
                   <h2 class="projet__txt__titre projet1__txt__titre">Kasa</h2>
-                  <p class="projet__txt__desc projet1__txt__desc">Site web de reservation d'appartements avec React</p>
+                  <p class="projet__txt__desc projet1__txt__desc">
+                     Site web de reservation d'appartements avec React. Ce site est composé de 4 pages : Accueil, A propos, Logement, 404.
+                  </p>
                </div>
             </div>
             <div class="projet projet2">
