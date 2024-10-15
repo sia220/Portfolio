@@ -9,27 +9,39 @@
 html {
   font-size: 62.5%;
   color: #ffffff;
+  scroll-padding-top: 60px;
 }
 
 .header {
-  position: sticky;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding: 20px 100px;
   font-size: 1.8em;
   background-color: #8c6c3d;
+  color: white;
 }
 .header__nom {
-  color: #000;
+  color: white;
 }
-.header__nav {
+.header__navbar {
   display: flex;
   flex-direction: row;
+  color: white;
 }
-.header__nav li {
-  padding-right: 10px;
+.header__navbar__item {
   list-style: none;
+}
+.header__navbar__item__link {
+  color: white;
+  padding-right: 10px;
+}
+.header__navbar__item__link:hover {
+  color: #00ced1;
+  text-decoration: underline #00ced1;
+  text-underline-offset: 10px;
 }
 
 .main {
@@ -42,14 +54,27 @@ html {
   width: 100%;
   height: 100vh;
   padding: 0 100px;
-  background-color: #8c6c3d;
+  background: linear-gradient(#8c6c3d, rgb(147, 117, 80));
 }
-.banniere__desc {
+.banniere__texte {
   width: 50%;
-  font-size: 4em;
   color: white;
   align-self: center;
+}
+.banniere__texte__titre {
   font-size: 4em;
+}
+.banniere__texte__desc {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.banniere__texte__bouton {
+  border: transparent;
+  background-color: #00ced1;
+  border-radius: 1.5em;
+  font-size: 2em;
+  padding: 0.7em 3em;
+  color: white;
 }
 .banniere__img {
   width: 50%;
@@ -57,7 +82,8 @@ html {
 }
 
 .projets {
-  background-color: #c89bab;
+  background-color: white;
+  color: black;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -69,17 +95,13 @@ html {
 }
 .projets .projet__img {
   width: 50%;
-}
-.projets .projet__txt {
-  width: 50%;
-}
-.projets .projet__img {
   border: transparent;
   border-radius: 20px;
   margin: 30px 30px 30px 0;
 }
 .projets .projet__txt {
   align-self: center;
+  width: 50%;
 }
 
 .titre-section {
@@ -106,16 +128,22 @@ html {
   background-color: white;
   margin: 10px 45px;
 }
+.competences__logos .skill:hover {
+  box-shadow: 10px 10px 10px rgb(20, 20, 20);
+  transform: scale(1.11);
+  transition-duration: 0.2s;
+}
 .competences__logos .skill img {
   width: 70px;
   height: 70px;
 }
 
 .contact {
-  background-color: #c89bab;
+  background-color: white;
   display: flex;
   flex-direction: column;
   padding: 30px 100px;
+  color: black;
 }
 .contact__txt {
   align-self: center;
@@ -129,6 +157,10 @@ html {
 .contact__logos__logo {
   width: 50px;
   margin: 30px;
+}
+.contact__logos__logo:hover {
+  transform: scale(1.05);
+  transition-duration: 0.2s;
 }
 
 .footer {

@@ -2,6 +2,12 @@
    padding: 15px;
    padding: 15px;
 }
+
+$color-primary: #8c6c3d;
+$color-secondary: #00ced1;
+$color-tertiary: white;
+$color-quaternary: black;
+
 * {
    // Position & Agencement
    // Taille & Espacement
@@ -19,36 +25,47 @@ html {
    // Texte & Couleur
    font-size: 62.5%; //Permet d'utiliser les em sur une base 10
    color: #ffffff;
+   scroll-padding-top: 60px; // Permet d'éviter que le header en position fixed chevauche les sections de la pages au clic sur la nav. (On lui donne la height du header)
 }
 .header {
    // Position & Agencement
-   position: sticky;
+   position: fixed;
    display: flex;
    justify-content: space-between;
    align-items: center;
+   width: 100%;
 
    // Taille & Espacement
    padding: 20px 100px;
 
    // Texte & Couleur
    font-size: 1.8em;
-   background-color: #8c6c3d;
+   background-color: $color-primary;
+   color: $color-tertiary;
 
    &__nom {
       // Texte & Couleur
-      color: #000;
+      color: $color-tertiary;
    }
-   &__nav {
+   &__navbar {
       // Position & Agencement
       display: flex;
       flex-direction: row;
+      color: $color-tertiary;
 
-      li {
-         // Taille & Espacement
-         padding-right: 10px;
-
+      &__item {
          // Texte & Couleur
          list-style: none;
+         &__link {
+            color: $color-tertiary;
+            padding-right: 10px;
+
+            &:hover {
+               color: $color-secondary;
+               text-decoration: underline $color-secondary;
+               text-underline-offset: 10px;
+            }
+         }
       }
    }
 }
@@ -67,14 +84,27 @@ html {
    padding: 0 100px;
 
    // Texte & Couleur
-   background-color: #8c6c3d;
+   background: linear-gradient($color-primary, rgb(147, 117, 80));
 
-   &__desc {
+   &__texte {
       width: 50%;
-      font-size: 4em;
-      color: white;
+      color: $color-tertiary;
       align-self: center;
-      font-size: 4em;
+      &__titre {
+         font-size: 4em;
+      }
+      &__desc {
+         font-size: 2em;
+         margin-bottom: 1em;
+      }
+      &__bouton {
+         border: transparent;
+         background-color: $color-secondary;
+         border-radius: 1.5em;
+         font-size: 2em;
+         padding: 0.7em 3em;
+         color: $color-tertiary;
+      }
    }
    &__img {
       width: 50%;
@@ -82,7 +112,8 @@ html {
    }
 }
 .projets {
-   background-color: #c89bab;
+   background-color: $color-tertiary;
+   color: $color-quaternary;
    width: 100%;
    display: flex;
    flex-direction: column;
@@ -92,17 +123,13 @@ html {
       flex-direction: row;
       &__img {
          width: 50%;
-      }
-      &__txt {
-         width: 50%;
-      }
-      &__img {
          border: transparent;
          border-radius: 20px;
          margin: 30px 30px 30px 0;
       }
       &__txt {
          align-self: center;
+         width: 50%;
       }
    }
 }
@@ -113,10 +140,11 @@ html {
 }
 
 .competences {
-   background-color: #8c6c3d;
+   background-color: $color-primary;
    display: flex;
    flex-direction: column;
    padding: 30px 250px;
+
    &__logos {
       display: flex;
       flex-wrap: wrap;
@@ -126,8 +154,13 @@ html {
          border: transparent 1px;
          border-radius: 50%;
          padding: 17px;
-         background-color: white;
+         background-color: $color-tertiary;
          margin: 10px 45px;
+         &:hover {
+            box-shadow: 10px 10px 10px rgb(20, 20, 20);
+            transform: scale(1.11);
+            transition-duration: 0.2s;
+         }
          img {
             width: 70px;
             height: 70px;
@@ -137,10 +170,11 @@ html {
 }
 
 .contact {
-   background-color: #c89bab;
+   background-color: $color-tertiary;
    display: flex;
    flex-direction: column;
    padding: 30px 100px;
+   color: $color-quaternary;
    &__txt {
       align-self: center;
       margin: 10px 0;
@@ -152,15 +186,18 @@ html {
       &__logo {
          width: 50px;
          margin: 30px;
+         &:hover {
+            transform: scale(1.05);
+            transition-duration: 0.2s;
+         }
       }
    }
 }
 
 .footer {
    padding: 30px 100px;
-
-   background-color: #8c6c3d;
-   color: white;
+   background-color: $color-primary;
+   color: $color-tertiary;
    text-align: center;
    display: flex;
    flex-direction: column;
