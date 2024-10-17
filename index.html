@@ -5,6 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Portfolio de Sadia</title>
       <link rel="stylesheet" href="./css/normalize.css" />
+      <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/rouse-sans" type="text/css" />
       <link rel="stylesheet" href="./css/style.css" />
       <link rel="icon" href="./assets/3d-laptop.png" />
    </head>
@@ -43,10 +44,13 @@
             <img class="banniere__img" src="./assets/3d-code.png" alt="" />
          </section>
          <section id="projets" class="projets">
-            <h2 class="titre-section">Projets</h2>
+            <div class="projets__entete">
+               <h2 class="projets__entete__titre titre-section">Projets</h2>
+               <p class="projets__entete__desc">Découvrez trois de mes projets différents l'un de l'autre et qui pouront correspondre à ce que vous recherchez !</p>
+            </div>
             <div class="projet projet1">
-               <a target="_blank" href="https://github.com/sia220/Kasa-">
-                  <img class="projet__img projet1__img" src="assets/banniere-code.jpg" alt="" />
+               <a class="projet__link projet1__link" target="_blank" href="https://github.com/sia220/Kasa-">
+                  <img class="projet__link__img projet1__link__img" src="assets/banniere-code.jpg" alt="" />
                </a>
                <div class="projet__txt projet1__txt">
                   <h2 class="projet__txt__titre projet1__txt__titre">Kasa</h2>
@@ -56,7 +60,9 @@
                </div>
             </div>
             <div class="projet projet2">
-               <a target="_blank" href="https://github.com/sia220/Piiquante"><img class="projet__img projet2__img" src="assets/banniere-code.jpg" alt="" /></a>
+               <a class="projet__link projet2__link" target="_blank" href="https://github.com/sia220/Piiquante"
+                  ><img class="projet__link__img projet2__link__img" src="assets/banniere-code.jpg" alt=""
+               /></a>
                <div class="projet__txt projet2__txt">
                   <h2 class="projet__txt__titre projet2__txt__titre">Piiquante</h2>
                   <p class="projet__txt__desc projet2__txt__desc">
@@ -67,7 +73,9 @@
                </div>
             </div>
             <div class="projet projet3">
-               <a target="_blank" href="https://github.com/sia220/Kanap"><img class="projet__img projet3__img" src="assets/banniere-code.jpg" alt="" /></a>
+               <a class="projet__link projet3__link" target="_blank" href="https://github.com/sia220/Kanap"
+                  ><img class="projet__link__img projet3__link__img" src="assets/banniere-code.jpg" alt=""
+               /></a>
                <div class="projet__txt projet3__txt">
                   <h2 class="projet__txt__titre projet3__txt__titre">Kanap</h2>
                   <p class="projet__txt__desc projet3__txt__desc">Site web de commande de canapés avec JavaScript et le localStorage.</p>
