@@ -2,11 +2,11 @@
    {
       "title": "Kanap",
       "pictures": [
-         "https://raw.githubusercontent.com/sia220/Portfolio/refs/heads/master/assets/Kanap-Page-Accueil.jpeg",
-         "https://raw.githubusercontent.com/sia220/Portfolio/refs/heads/master/assets/Kanap-Page-Produit-Vierge.jpeg",
-         "https://raw.githubusercontent.com/sia220/Portfolio/refs/heads/master/assets/Kanap-Page-Produit-Compl%C3%A9t%C3%A9e.jpeg",
-         "https://raw.githubusercontent.com/sia220/Portfolio/refs/heads/master/assets/Kanap-Page-Panier-Vierge.jpeg",
-         "https://raw.githubusercontent.com/sia220/Portfolio/aa27ce388138d83cc0f7e5bd707a1f4c521af12c/assets/Kanap-Page-Panier-Compl%C3%A9t%C3%A9e.jpeg",
+         "https://github.com/sia220/Portfolio/blob/master/assets/Kanap-Page-Accueil.jpeg?raw=true",
+         "https://github.com/sia220/Portfolio/blob/master/assets/Kanap-Page-Produit-Vierge.jpeg?raw=true",
+         "https://github.com/sia220/Portfolio/blob/master/assets/Kanap-Page-Produit-Compl%C3%A9t%C3%A9e.jpeg?raw=true",
+         "https://github.com/sia220/Portfolio/blob/master/assets/Kanap-Page-Panier-Vierge.jpeg?raw=true",
+         "https://github.com/sia220/Portfolio/blob/master/assets/Kanap-Page-Panier-Compl%C3%A9t%C3%A9e.jpeg?raw=true",
          "https://raw.githubusercontent.com/sia220/Portfolio/aa27ce388138d83cc0f7e5bd707a1f4c521af12c/assets/Kanap-Page-Commande.jpeg"
       ]
    },
@@ -23,10 +23,11 @@
    {
       "title": "Kasa",
       "pictures": [
-         "https://github.com/sia220/Portfolio/blob/master/assets/Kasa-Page-Accueil-demie.jpeg?raw=true",
+         "https://github.com/sia220/Portfolio/blob/master/assets/Kasa-Page-Accueil.jpeg?raw=true",
          "https://github.com/sia220/Portfolio/blob/master/assets/Kasa-Page-Logement.jpeg?raw=true",
-         "https://raw.githubusercontent.com/sia220/Portfolio/refs/heads/master/assets/Kasa-Page-A-Propos.jpeg",
-         "https://raw.githubusercontent.com/sia220/Portfolio/refs/heads/master/assets/Kasa-Page-404.jpeg"
+         "https://github.com/sia220/Portfolio/blob/master/assets/Kasa-Page-LogementBungalow.jpeg?raw=true",
+         "https://github.com/sia220/Portfolio/blob/master/assets/Kasa-Page-Apropos.jpeg?raw=true",
+         "https://github.com/sia220/Portfolio/blob/master/assets/Kasa-Page-404.jpeg?raw=true"
       ]
    }
 ]
