@@ -1,11 +1,15 @@
 @mixin padding-page {
-   padding: 15px;
-   padding: 15px;
+   padding: 30px 100px;
+}
+
+@mixin flex-column {
+   display: flex;
+   flex-direction: column;
 }
 
 $color-primary: #8c6c3d;
 $color-secondary: #00ced1;
-$color-tertiary: white;
+$color-tertiary: #ffff;
 $color-quaternary: black;
 
 * {
@@ -17,6 +21,7 @@ $color-quaternary: black;
    // Visibilité & Effets
    box-sizing: border-box;
    margin: 0;
+   font-family: "GratiaSansRegular", sans-serif;
    a {
       text-decoration: none;
    }
@@ -24,7 +29,7 @@ $color-quaternary: black;
 html {
    // Texte & Couleur
    font-size: 62.5%; //Permet d'utiliser les em sur une base 10
-   color: #ffffff;
+   color: $color-tertiary;
    scroll-padding-top: 60px; // Permet d'éviter que le header en position fixed chevauche les sections de la pages au clic sur la nav. (On lui donne la height du header)
 }
 .header {
@@ -34,6 +39,7 @@ html {
    justify-content: space-between;
    align-items: center;
    width: 100%;
+   z-index: 1;
 
    // Taille & Espacement
    padding: 20px 100px;
@@ -50,7 +56,6 @@ html {
    &__navbar {
       // Position & Agencement
       display: flex;
-      flex-direction: row;
       color: $color-tertiary;
 
       &__item {
@@ -76,7 +81,6 @@ html {
 .banniere {
    // Position & Agencement
    display: flex;
-   flex-direction: row;
 
    // Taille & Espacement
    width: 100%;
@@ -112,38 +116,103 @@ html {
    }
 }
 .projets {
+   @include flex-column;
+   @include padding-page;
+   width: 100%;
    background-color: $color-tertiary;
    color: $color-quaternary;
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   padding: 30px 100px;
+   &__entete {
+      @include flex-column;
+      align-items: center;
+      &__desc {
+         color: $color-primary;
+      }
+   }
    .projet {
       display: flex;
-      flex-direction: row;
-      &__img {
-         width: 50%;
+      margin-bottom: 30px;
+      &__caroussel {
+         width: 556px;
+         height: 267px;
          border: transparent;
+         box-shadow: 3px;
          border-radius: 20px;
          margin: 30px 30px 30px 0;
+         position: relative;
+         overflow: hidden;
+         background: linear-gradient($color-primary, rgb(194, 170, 140));
+         box-shadow: 3px 3px 3px 3px rgb(196, 193, 193);
+         &:hover .arrow-left,
+         &:hover .arrow-right {
+            opacity: 95%;
+         }
+
+         &__link__img {
+            width: 100%;
+
+            border: transparent;
+            border-radius: 20px;
+            object-fit: cover;
+         }
+         .arrow-left {
+            position: absolute;
+            top: 34%;
+            left: 0.5em;
+            width: 75px;
+
+            background-color: $color-primary;
+            border-radius: 10px;
+            opacity: 0%;
+            transition: opacity 0.4s;
+            cursor: pointer;
+            svg {
+               width: 100%;
+               height: 100%;
+               color: $color-tertiary;
+            }
+         }
+         .arrow-right {
+            position: absolute;
+            top: 34%;
+            right: 0.5em;
+            width: 75px;
+
+            background-color: $color-primary;
+            border-radius: 10px;
+            opacity: 0%;
+            transition: opacity 0.4s;
+            cursor: pointer;
+            svg {
+               width: 100%;
+               height: 100%;
+               color: $color-tertiary;
+            }
+         }
       }
       &__txt {
          align-self: center;
          width: 50%;
+         background-color: $color-primary;
+         height: 21em;
+         border-radius: 2em;
+         padding: 1em;
       }
    }
+}
+#p3__caroussel {
+   height: 460px;
 }
 
 .titre-section {
    font-size: 4em;
    align-self: center;
+   margin-bottom: 0.5em;
 }
 
 .competences {
-   background-color: $color-primary;
-   display: flex;
-   flex-direction: column;
+   @include flex-column;
    padding: 30px 250px;
+   background-color: $color-primary;
 
    &__logos {
       display: flex;
@@ -171,9 +240,8 @@ html {
 
 .contact {
    background-color: $color-tertiary;
-   display: flex;
-   flex-direction: column;
-   padding: 30px 100px;
+   @include flex-column;
+   @include padding-page;
    color: $color-quaternary;
    &__txt {
       align-self: center;
@@ -195,13 +263,12 @@ html {
 }
 
 .footer {
-   padding: 30px 100px;
+   @include flex-column;
+   @include padding-page;
+   text-align: center;
+   justify-content: space-around;
    background-color: $color-primary;
    color: $color-tertiary;
-   text-align: center;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
    &__copyright {
       font-size: 1.9em;
       margin-bottom: 20px;
