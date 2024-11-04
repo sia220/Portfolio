@@ -7,7 +7,7 @@ async function Caroussel() {
    function CarousselFlecheGauche(baliseArrowLeft, baliseImg, liste, total) {
       baliseArrowLeft.addEventListener("click", function (event) {
          event.preventDefault();
-         let imageActuelle = baliseImg.src;
+         let imageActuelle = ".." + new URL(baliseImg.src).pathname;
 
          liste.pictures.map((element, index) => {
             element === imageActuelle
@@ -23,7 +23,7 @@ async function Caroussel() {
    function CarousselFlecheDroite(baliseArrowRight, baliseImg, liste, total) {
       baliseArrowRight.addEventListener("click", function (event) {
          event.preventDefault();
-         let imageActuelle = baliseImg.src;
+         let imageActuelle = ".." + new URL(baliseImg.src).pathname;
 
          liste.pictures.map((element, index) => {
             element === imageActuelle

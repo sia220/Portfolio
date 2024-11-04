@@ -2,32 +2,31 @@
    {
       "title": "Kanap",
       "pictures": [
-         "https://github.com/sia220/Portfolio/blob/master/assets/Kanap-Page-Accueil.jpeg?raw=true",
-         "https://github.com/sia220/Portfolio/blob/master/assets/Kanap-Page-Produit-Vierge.jpeg?raw=true",
-         "https://github.com/sia220/Portfolio/blob/master/assets/Kanap-Page-Produit-Compl%C3%A9t%C3%A9e.jpeg?raw=true",
-         "https://github.com/sia220/Portfolio/blob/master/assets/Kanap-Page-Panier-Vierge.jpeg?raw=true",
-         "https://github.com/sia220/Portfolio/blob/master/assets/Kanap-Page-Panier-Compl%C3%A9t%C3%A9e.jpeg?raw=true",
-         "https://raw.githubusercontent.com/sia220/Portfolio/aa27ce388138d83cc0f7e5bd707a1f4c521af12c/assets/Kanap-Page-Commande.jpeg"
+         "../assets/Kanap-Page-Accueil.jpeg",
+         "../assets/Kanap-Page-Produit-Vierge.jpeg",
+         "../assets/Kanap-Page-Panier-Top.jpeg",
+         "../assets/Kanap-Page-Panier-Bottom.jpeg",
+         "../assets/Kanap-Page-Commande.jpeg"
       ]
    },
    {
       "title": "Piiquante",
       "pictures": [
-         "https://raw.githubusercontent.com/sia220/Portfolio/refs/heads/master/assets/Piiquante-Page-Inscription.jpeg",
-         "https://raw.githubusercontent.com/sia220/Portfolio/refs/heads/master/assets/Piiquante-Page-Accueil.jpeg",
-         "https://raw.githubusercontent.com/sia220/Portfolio/refs/heads/master/assets/Piiquante-Page-Ajouter_Sauce.jpeg",
-         "https://raw.githubusercontent.com/sia220/Portfolio/refs/heads/master/assets/Piiquante-Page-Sauce_De_Moi.jpeg",
-         "https://raw.githubusercontent.com/sia220/Portfolio/refs/heads/master/assets/Piiquante-Page-Sauce_De_Autre_User.jpeg"
+         "../assets/Piiquante-Page-Inscription.jpeg",
+         "../assets/Piiquante-Page-Accueil.jpeg",
+         "../assets/Piiquante-Page-Ajouter_Sauce.jpeg",
+         "../assets/Piiquante-Page-Sauce_De_Moi.jpeg",
+         "../assets/Piiquante-Page-Sauce_De_Autre_User.jpeg"
       ]
    },
    {
       "title": "Kasa",
       "pictures": [
-         "https://github.com/sia220/Portfolio/blob/master/assets/Kasa-Page-Accueil.jpeg?raw=true",
-         "https://github.com/sia220/Portfolio/blob/master/assets/Kasa-Page-Logement.jpeg?raw=true",
-         "https://github.com/sia220/Portfolio/blob/master/assets/Kasa-Page-LogementBungalow.jpeg?raw=true",
-         "https://github.com/sia220/Portfolio/blob/master/assets/Kasa-Page-Apropos.jpeg?raw=true",
-         "https://github.com/sia220/Portfolio/blob/master/assets/Kasa-Page-404.jpeg?raw=true"
+         "../assets/Kasa-Page-Accueil.jpeg",
+         "../assets/Kasa-Page-Logement.jpeg",
+         "../assets/Kasa-Page-LogementBungalow.jpeg",
+         "../assets/Kasa-Page-Apropos.jpeg",
+         "../assets/Kasa-Page-404.jpeg"
       ]
    }
 ]
