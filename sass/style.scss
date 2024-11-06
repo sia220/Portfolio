@@ -12,59 +12,51 @@ $color-secondary: #00ced1;
 $color-tertiary: #ffff;
 $color-quaternary: black;
 
+// Organisation des propriétes : Position & Agencement, Taille & Espacement, Texte & Couleur, et Visibilité & Effets.
+
 * {
-   // Position & Agencement
-   // Taille & Espacement
-
-   // Texte & Couleur
-
-   // Visibilité & Effets
    box-sizing: border-box;
    margin: 0;
+
    font-family: "GratiaSansRegular", sans-serif;
    a {
       text-decoration: none;
    }
 }
+
 html {
-   // Texte & Couleur
-   font-size: 62.5%; //Permet d'utiliser les em sur une base 10
-   color: $color-tertiary;
    scroll-padding-top: 60px; // Permet d'éviter que le header en position fixed chevauche les sections de la pages au clic sur la nav. (On lui donne la height du header)
+
+   font-size: 62.5%; // Permet d'utiliser les em sur une base 10
+   color: $color-tertiary;
 }
+
 .header {
-   // Position & Agencement
    position: fixed;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   width: 100%;
    z-index: 1;
 
-   // Taille & Espacement
+   width: 100%;
    padding: 20px 100px;
 
-   // Texte & Couleur
    font-size: 1.8em;
-   background-color: $color-primary;
    color: $color-tertiary;
-
+   background-color: $color-primary;
    &__nom {
-      // Texte & Couleur
       color: $color-tertiary;
    }
    &__navbar {
-      // Position & Agencement
       display: flex;
-      color: $color-tertiary;
 
+      color: $color-tertiary;
       &__item {
-         // Texte & Couleur
          list-style: none;
          &__link {
-            color: $color-tertiary;
             padding-right: 10px;
 
+            color: $color-tertiary;
             &:hover {
                color: $color-secondary;
                text-decoration: underline $color-secondary;
@@ -74,53 +66,57 @@ html {
       }
    }
 }
+
 .main {
-   // Taille & Espacement
    padding: 0;
 }
+
 .banniere {
-   // Position & Agencement
    display: flex;
 
-   // Taille & Espacement
    width: 100%;
    height: 100vh;
    padding: 0 100px;
 
-   // Texte & Couleur
    background: linear-gradient($color-primary, rgb(147, 117, 80));
-
    &__texte {
-      width: 50%;
-      color: $color-tertiary;
       align-self: center;
+
+      width: 50%;
+
+      color: $color-tertiary;
       &__titre {
          font-size: 4em;
       }
       &__desc {
-         font-size: 2em;
          margin-bottom: 2em;
+
+         font-size: 2em;
       }
       &__bouton {
-         border: transparent;
-         background-color: $color-secondary;
-         border-radius: 1.5em;
-         font-size: 2em;
          padding: 0.7em 3em;
+         border-radius: 1.5em;
+
+         font-size: 2em;
          color: $color-tertiary;
+         background-color: $color-secondary;
       }
    }
    &__img {
-      width: 50%;
       object-fit: contain;
+
+      width: 50%;
    }
 }
+
 .projets {
    @include flex-column;
+
    @include padding-page;
    width: 100%;
-   background-color: $color-tertiary;
+
    color: $color-quaternary;
+   background-color: $color-tertiary;
    &__entete {
       @include flex-column;
       align-items: center;
@@ -130,44 +126,47 @@ html {
    }
    .projet {
       display: flex;
+
       margin-bottom: 30px;
       &__caroussel {
+         position: relative;
+
          width: 556px;
          height: 267px;
-         border: transparent;
-         box-shadow: 3px;
-         border-radius: 20px;
          margin: 30px 30px 30px 0;
-         position: relative;
-         overflow: hidden;
+         border-radius: 20px;
+
          background: linear-gradient($color-primary, rgb(194, 170, 140));
+
+         overflow: hidden;
          box-shadow: 3px 3px 3px 3px rgb(196, 193, 193);
          &:hover .arrow-left,
          &:hover .arrow-right {
             opacity: 95%;
          }
-
          &__link__img {
-            width: 100%;
-
-            border: transparent;
-            border-radius: 20px;
             object-fit: cover;
+
+            width: 100%;
+            border-radius: 20px;
          }
          .arrow-left {
             position: absolute;
             top: 34%;
             left: 0.5em;
+
             width: 75px;
+            border-radius: 10px;
 
             background-color: $color-primary;
-            border-radius: 10px;
+
             opacity: 0%;
             transition: opacity 0.4s;
             cursor: pointer;
             svg {
                width: 100%;
                height: 100%;
+
                color: $color-tertiary;
             }
          }
@@ -175,62 +174,72 @@ html {
             position: absolute;
             top: 34%;
             right: 0.5em;
+
             width: 75px;
+            border-radius: 10px;
 
             background-color: $color-primary;
-            border-radius: 10px;
+
             opacity: 0%;
             transition: opacity 0.4s;
             cursor: pointer;
             svg {
                width: 100%;
                height: 100%;
+
                color: $color-tertiary;
             }
          }
       }
       &__txt {
          align-self: center;
+
          width: 50%;
-         background-color: $color-primary;
          height: 21em;
-         border-radius: 2em;
          padding: 1em;
+         border-radius: 2em;
+
+         background-color: $color-primary;
       }
    }
 }
+
 #p3__caroussel {
    height: 460px;
 }
 
 .titre-section {
-   font-size: 4em;
    align-self: center;
+
    margin-bottom: 0.5em;
+
+   font-size: 4em;
 }
 
 .competences {
    @include flex-column;
-   padding: 30px 250px;
-   background-color: $color-primary;
 
+   padding: 30px 250px;
+
+   background-color: $color-primary;
    &__logos {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+
       margin-top: 30px;
       .skill {
-         border: transparent 1px;
-         border-radius: 50%;
          padding: 17px;
-         background-color: $color-tertiary;
          margin: 10px 45px;
+         border-radius: 50%;
+
+         background-color: $color-tertiary;
          &:hover {
             box-shadow: 10px 10px 10px rgb(20, 20, 20);
             transform: scale(1.11);
             transition-duration: 0.2s;
          }
-         img {
+         &__img {
             width: 70px;
             height: 70px;
          }
@@ -239,13 +248,17 @@ html {
 }
 
 .contact {
-   background-color: $color-tertiary;
    @include flex-column;
+
    @include padding-page;
+
    color: $color-quaternary;
+   background-color: $color-tertiary;
    &__txt {
       align-self: center;
+
       margin: 10px 0;
+
       font-size: 1.7em;
    }
    &__logos {
@@ -264,14 +277,17 @@ html {
 
 .footer {
    @include flex-column;
-   @include padding-page;
    text-align: center;
    justify-content: space-around;
-   background-color: $color-primary;
+
+   @include padding-page;
+
    color: $color-tertiary;
+   background-color: $color-primary;
    &__copyright {
-      font-size: 1.9em;
       margin-bottom: 20px;
+
+      font-size: 1.9em;
    }
    &__credits {
       font-size: 1.5em;

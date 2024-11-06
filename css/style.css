@@ -8,9 +8,9 @@
 }
 
 html {
+  scroll-padding-top: 60px;
   font-size: 62.5%;
   color: white;
-  scroll-padding-top: 60px;
 }
 
 .header {
@@ -18,12 +18,12 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   z-index: 1;
+  width: 100%;
   padding: 20px 100px;
   font-size: 1.8em;
-  background-color: #8c6c3d;
   color: white;
+  background-color: #8c6c3d;
 }
 .header__nom {
   color: white;
@@ -36,8 +36,8 @@ html {
   list-style: none;
 }
 .header__navbar__item__link {
-  color: white;
   padding-right: 10px;
+  color: white;
 }
 .header__navbar__item__link:hover {
   color: #00ced1;
@@ -57,28 +57,27 @@ html {
   background: linear-gradient(#8c6c3d, rgb(147, 117, 80));
 }
 .banniere__texte {
+  align-self: center;
   width: 50%;
   color: white;
-  align-self: center;
 }
 .banniere__texte__titre {
   font-size: 4em;
 }
 .banniere__texte__desc {
-  font-size: 2em;
   margin-bottom: 2em;
+  font-size: 2em;
 }
 .banniere__texte__bouton {
-  border: transparent;
-  background-color: #00ced1;
+  padding: 0.7em 3em;
   border-radius: 1.5em;
   font-size: 2em;
-  padding: 0.7em 3em;
   color: white;
+  background-color: #00ced1;
 }
 .banniere__img {
-  width: 50%;
   object-fit: contain;
+  width: 50%;
 }
 
 .projets {
@@ -86,8 +85,8 @@ html {
   flex-direction: column;
   padding: 30px 100px;
   width: 100%;
-  background-color: white;
   color: black;
+  background-color: white;
 }
 .projets__entete {
   display: flex;
@@ -102,33 +101,30 @@ html {
   margin-bottom: 30px;
 }
 .projets .projet__caroussel {
+  position: relative;
   width: 556px;
   height: 267px;
-  border: transparent;
-  box-shadow: 3px;
-  border-radius: 20px;
   margin: 30px 30px 30px 0;
-  position: relative;
-  overflow: hidden;
+  border-radius: 20px;
   background: linear-gradient(#8c6c3d, rgb(194, 170, 140));
+  overflow: hidden;
   box-shadow: 3px 3px 3px 3px rgb(196, 193, 193);
 }
 .projets .projet__caroussel:hover .arrow-left, .projets .projet__caroussel:hover .arrow-right {
   opacity: 95%;
 }
 .projets .projet__caroussel__link__img {
-  width: 100%;
-  border: transparent;
-  border-radius: 20px;
   object-fit: cover;
+  width: 100%;
+  border-radius: 20px;
 }
 .projets .projet__caroussel .arrow-left {
   position: absolute;
   top: 34%;
   left: 0.5em;
   width: 75px;
-  background-color: #8c6c3d;
   border-radius: 10px;
+  background-color: #8c6c3d;
   opacity: 0%;
   transition: opacity 0.4s;
   cursor: pointer;
@@ -143,8 +139,8 @@ html {
   top: 34%;
   right: 0.5em;
   width: 75px;
-  background-color: #8c6c3d;
   border-radius: 10px;
+  background-color: #8c6c3d;
   opacity: 0%;
   transition: opacity 0.4s;
   cursor: pointer;
@@ -157,10 +153,10 @@ html {
 .projets .projet__txt {
   align-self: center;
   width: 50%;
-  background-color: #8c6c3d;
   height: 21em;
-  border-radius: 2em;
   padding: 1em;
+  border-radius: 2em;
+  background-color: #8c6c3d;
 }
 
 #p3__caroussel {
@@ -168,9 +164,9 @@ html {
 }
 
 .titre-section {
-  font-size: 4em;
   align-self: center;
   margin-bottom: 0.5em;
+  font-size: 4em;
 }
 
 .competences {
@@ -186,28 +182,27 @@ html {
   margin-top: 30px;
 }
 .competences__logos .skill {
-  border: transparent 1px;
-  border-radius: 50%;
   padding: 17px;
-  background-color: white;
   margin: 10px 45px;
+  border-radius: 50%;
+  background-color: white;
 }
 .competences__logos .skill:hover {
   box-shadow: 10px 10px 10px rgb(20, 20, 20);
   transform: scale(1.11);
   transition-duration: 0.2s;
 }
-.competences__logos .skill img {
+.competences__logos .skill__img {
   width: 70px;
   height: 70px;
 }
 
 .contact {
-  background-color: white;
   display: flex;
   flex-direction: column;
   padding: 30px 100px;
   color: black;
+  background-color: white;
 }
 .contact__txt {
   align-self: center;
@@ -230,15 +225,15 @@ html {
 .footer {
   display: flex;
   flex-direction: column;
-  padding: 30px 100px;
   text-align: center;
   justify-content: space-around;
-  background-color: #8c6c3d;
+  padding: 30px 100px;
   color: white;
+  background-color: #8c6c3d;
 }
 .footer__copyright {
-  font-size: 1.9em;
   margin-bottom: 20px;
+  font-size: 1.9em;
 }
 .footer__credits {
   font-size: 1.5em;
