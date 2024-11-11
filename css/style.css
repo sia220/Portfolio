@@ -85,13 +85,14 @@ html {
   flex-direction: column;
   padding: 30px 100px;
   width: 100%;
-  color: black;
   background-color: white;
+  background-image: url(../assets/vagues.svg);
 }
 .projets__entete {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: black;
 }
 .projets__entete__desc {
   color: #8c6c3d;
@@ -153,10 +154,16 @@ html {
 .projets .projet__txt {
   align-self: center;
   width: 50%;
-  height: 21em;
+  height: 267px;
   padding: 1em;
   border-radius: 2em;
   background-color: #8c6c3d;
+  line-height: 16px;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+.projets .projet__txt__titre {
+  padding-bottom: 15px;
 }
 
 #p3__caroussel {
@@ -203,6 +210,7 @@ html {
   padding: 30px 100px;
   color: black;
   background-color: white;
+  background-image: url(../assets/vagues.svg);
 }
 .contact__txt {
   align-self: center;
