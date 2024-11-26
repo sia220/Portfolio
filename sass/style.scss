@@ -12,6 +12,9 @@ $color-secondary: #00ced1;
 $color-tertiary: #ffff;
 $color-quaternary: black;
 
+$mobile: 425px;
+$tablette: 768px;
+
 // Organisation des propriétes : Position & Agencement, Taille & Espacement, Texte & Couleur, et Visibilité & Effets.
 
 * {
@@ -119,49 +122,62 @@ html {
    background-image: url(../assets/vagues.svg);
    &__entete {
       @include flex-column;
+
       align-items: center;
       color: $color-quaternary;
       &__desc {
+         margin-bottom: 15px;
+
          color: $color-primary;
       }
    }
    .projet {
       display: flex;
+      justify-content: space-evenly;
 
       margin-bottom: 30px;
+
+      @media screen and (max-width: $tablette) {
+         flex-direction: column;
+      }
       &__caroussel {
          position: relative;
+         display: flex;
+         justify-content: center;
 
-         width: 556px;
-         height: 267px;
+         width: 100%;
+         height: 73vh;
+         max-height: 600px;
          margin: 30px 30px 30px 0;
+
          border-radius: 20px;
-
-         background: linear-gradient($color-primary, rgb(194, 170, 140));
-
+         background: rgba(0, 0, 0, 0.07); /* Dégradé léger */
          overflow: hidden;
-         box-shadow: 3px 3px 3px 3px rgb(196, 193, 193);
+         box-shadow: 17px 14px 20px 0px rgb(165, 165, 165);
+
          &:hover .arrow-left,
          &:hover .arrow-right {
             opacity: 95%;
          }
          &__link__img {
-            object-fit: cover;
+            object-fit: contain;
 
             width: 100%;
-            border-radius: 20px;
+            height: 100%;
+
+            align-content: center;
          }
          .arrow-left {
             position: absolute;
-            top: 34%;
+            top: 40%;
             left: 0.5em;
 
-            width: 75px;
+            width: 50px;
             border-radius: 10px;
 
             background-color: $color-primary;
 
-            opacity: 0%;
+            opacity: 80%;
             transition: opacity 0.4s;
             cursor: pointer;
             svg {
@@ -173,15 +189,15 @@ html {
          }
          .arrow-right {
             position: absolute;
-            top: 34%;
+            top: 40%;
             right: 0.5em;
 
-            width: 75px;
+            width: 50px;
             border-radius: 10px;
 
             background-color: $color-primary;
 
-            opacity: 0%;
+            opacity: 80%;
             transition: opacity 0.4s;
             cursor: pointer;
             svg {
@@ -195,8 +211,9 @@ html {
       &__txt {
          align-self: center;
 
-         width: 50%;
-         height: 267px;
+         width: 100%;
+         max-height: 73vh;
+         min-height: 200px;
          padding: 1em;
          border-radius: 2em;
 
@@ -205,14 +222,14 @@ html {
          font-size: 11px;
          letter-spacing: 0.5px;
          &__titre {
-            padding-bottom: 15px;
+            padding: 0;
+            justify-self: center;
+         }
+         &__desc {
+            padding: 11px 25px 0px 25px;
          }
       }
    }
-}
-
-#p3__caroussel {
-   height: 460px;
 }
 
 .titre-section {

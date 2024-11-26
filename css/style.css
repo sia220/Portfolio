@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -95,38 +96,49 @@ html {
   color: black;
 }
 .projets__entete__desc {
+  margin-bottom: 15px;
   color: #8c6c3d;
 }
 .projets .projet {
   display: flex;
+  justify-content: space-evenly;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .projets .projet {
+    flex-direction: column;
+  }
 }
 .projets .projet__caroussel {
   position: relative;
-  width: 556px;
-  height: 267px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 73vh;
+  max-height: 600px;
   margin: 30px 30px 30px 0;
   border-radius: 20px;
-  background: linear-gradient(#8c6c3d, rgb(194, 170, 140));
+  background: rgba(0, 0, 0, 0.07); /* Dégradé léger */
   overflow: hidden;
-  box-shadow: 3px 3px 3px 3px rgb(196, 193, 193);
+  box-shadow: 17px 14px 20px 0px rgb(165, 165, 165);
 }
 .projets .projet__caroussel:hover .arrow-left, .projets .projet__caroussel:hover .arrow-right {
   opacity: 95%;
 }
 .projets .projet__caroussel__link__img {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
-  border-radius: 20px;
+  height: 100%;
+  align-content: center;
 }
 .projets .projet__caroussel .arrow-left {
   position: absolute;
-  top: 34%;
+  top: 40%;
   left: 0.5em;
-  width: 75px;
+  width: 50px;
   border-radius: 10px;
   background-color: #8c6c3d;
-  opacity: 0%;
+  opacity: 80%;
   transition: opacity 0.4s;
   cursor: pointer;
 }
@@ -137,12 +149,12 @@ html {
 }
 .projets .projet__caroussel .arrow-right {
   position: absolute;
-  top: 34%;
+  top: 40%;
   right: 0.5em;
-  width: 75px;
+  width: 50px;
   border-radius: 10px;
   background-color: #8c6c3d;
-  opacity: 0%;
+  opacity: 80%;
   transition: opacity 0.4s;
   cursor: pointer;
 }
@@ -153,8 +165,9 @@ html {
 }
 .projets .projet__txt {
   align-self: center;
-  width: 50%;
-  height: 267px;
+  width: 100%;
+  max-height: 73vh;
+  min-height: 200px;
   padding: 1em;
   border-radius: 2em;
   background-color: #8c6c3d;
@@ -163,11 +176,11 @@ html {
   letter-spacing: 0.5px;
 }
 .projets .projet__txt__titre {
-  padding-bottom: 15px;
+  padding: 0;
+  justify-self: center;
 }
-
-#p3__caroussel {
-  height: 460px;
+.projets .projet__txt__desc {
+  padding: 11px 25px 0px 25px;
 }
 
 .titre-section {
