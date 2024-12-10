@@ -42,7 +42,7 @@ async function Caroussel() {
 
    // Affichage de la première img dans le caroussel du P1
    const baliseImgKasa = document.querySelector(".p1__caroussel__link__img ");
-   baliseImgKasa.setAttribute("src", listeKasa.pictures[0]);
+   baliseImgKasa.src = listeKasa.pictures[0];
 
    // Variable du total d'images
    const totalKasa = listeKasa.pictures.length - 1;
@@ -62,7 +62,7 @@ async function Caroussel() {
 
    // Affichage de la première img dans le caroussel du P2
    const baliseImgPiiquante = document.querySelector(".p2__caroussel__link__img ");
-   baliseImgPiiquante.setAttribute("src", listePiiquante.pictures[0]);
+   baliseImgPiiquante.src = listePiiquante.pictures[0];
 
    // Variables du total d'images
    const totalPiiquante = listePiiquante.pictures.length - 1;
@@ -82,7 +82,7 @@ async function Caroussel() {
 
    // Affichage de la première img dans le caroussel du P3
    const baliseImgKanap = document.querySelector(".p3__caroussel__link__img ");
-   baliseImgKanap.setAttribute("src", listeKanap.pictures[0]);
+   baliseImgKanap.src = listeKanap.pictures[0];
 
    // Variables du total d'images
    const totalKanap = listeKanap.pictures.length - 1;
