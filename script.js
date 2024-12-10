@@ -1,6 +1,6 @@
 async function Caroussel() {
    // Récupération du fichier JSON
-   const reponse = await fetch("/datas/images-caroussel.json");
+   const reponse = await fetch("/Portfolio/datas/images-caroussel.json");
    const images = await reponse.json();
 
    // Fonction pour gérer le clic sur la flèche gauche du caroussel
