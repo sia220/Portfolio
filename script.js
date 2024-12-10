@@ -96,3 +96,22 @@ async function Caroussel() {
    CarousselFlecheDroite(baliseArrowRightKanap, baliseImgKanap, listeKanap, totalKanap);
 }
 Caroussel();
+
+// Menu Hamburger
+
+let iconeMenu = document.querySelector(".header__hamburger");
+let ulMenu = document.querySelector(".header__navbar");
+let liMenu = document.querySelectorAll(".header__navbar__item__link");
+
+// Au clic sur les flèches du menu hamburger, on ajoute ou retire la classe indiquée à ul.
+iconeMenu.addEventListener("click", function (event) {
+   event.preventDefault();
+   ulMenu.classList.toggle("header__navbar--active");
+});
+
+// Au clic sur un li, on retire la classe indiquée à ul.
+for (let iteration = 0; iteration < liMenu.length; iteration++) {
+   liMenu[iteration].addEventListener("click", function (event) {
+      ulMenu.classList.remove("header__navbar--active");
+   });
+}
