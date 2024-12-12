@@ -217,7 +217,7 @@ html {
    width: 100%;
 
    background-color: $color-tertiary;
-   background-image: url(../assets/vagues.svg);
+   background-image: url(../assets/vagues_1.webp);
    @media screen and (max-width: $tablette) {
       @include padding-tablette;
    }
@@ -396,7 +396,7 @@ html {
    color: $color-quaternary;
 
    background-color: $color-tertiary;
-   background-image: url(../assets/vagues.svg);
+   background-image: url(../assets/vagues_1.webp);
    @media screen and (max-width: $tablette) {
       @include padding-tablette;
    }
