@@ -5,14 +5,22 @@
    "main": "index.js",
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "sass": "sass --watch ./sass/style.scss:./css/style.css"
+      "sass": "sass --watch ./sass/style.scss:./css/style.css",
+      "prefix": " postcss ./css/style.css --use autoprefixer",
+      "minify": "postcss ./css/style.css --use cssnano -o ./css/style.min.css",
+      "minify-js": "terser ./js/script.js -o ./js/script.min.js --compress --mangle"
    },
    "author": "",
    "license": "ISC",
    "dependencies": {
+      "cssnano": "^7.0.6",
+      "depcheck": "^1.4.7",
       "sass": "^1.79.2"
    },
    "devDependencies": {
-      "prettier": "^3.3.3"
+      "autoprefixer": "^10.4.20",
+      "postcss-cli": "^11.0.0",
+      "prettier": "^3.3.3",
+      "terser": "^5.37.0"
    }
 }
