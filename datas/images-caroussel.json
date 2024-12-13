@@ -2,31 +2,31 @@
    {
       "title": "Kanap",
       "pictures": [
-         "assets/Kanap-Page-Accueil.jpeg",
-         "assets/Kanap-Page-Produit-Vierge.jpeg",
-         "assets/Kanap-Page-Panier-Top.jpeg",
-         "assets/Kanap-Page-Panier-Bottom.jpeg",
-         "assets/Kanap-Page-Commande.jpeg"
+         "assets/Kanap-Page-Accueil.webp",
+         "assets/Kanap-Page-Produit-Vierge.webp",
+         "assets/Kanap-Page-Panier-Top.webp",
+         "assets/Kanap-Page-Panier-Bottom.webp",
+         "assets/Kanap-Page-Commande.webp"
       ]
    },
    {
       "title": "Piiquante",
       "pictures": [
-         "assets/Piiquante-Page-Inscription.jpeg",
-         "assets/Piiquante-Page-Accueil.jpeg",
-         "assets/Piiquante-Page-Ajouter_Sauce.jpeg",
-         "assets/Piiquante-Page-Sauce_De_Moi.jpeg",
-         "assets/Piiquante-Page-Sauce_De_Autre_User.jpeg"
+         "assets/Piiquante-Page-Inscription.webp",
+         "assets/Piiquante-Page-Accueil.webp",
+         "assets/Piiquante-Page-Ajouter_Sauce.webp",
+         "assets/Piiquante-Page-Sauce_De_Moi.webp",
+         "assets/Piiquante-Page-Sauce_De_Autre_User.webp"
       ]
    },
    {
       "title": "Kasa",
       "pictures": [
-         "assets/Kasa-Page-Accueil.jpeg",
-         "assets/Kasa-Page-Logement.jpeg",
-         "assets/Kasa-Page-LogementBungalow.jpeg",
-         "assets/Kasa-Page-Apropos.jpeg",
-         "assets/Kasa-Page-404.jpeg"
+         "assets/Kasa-Page-Accueil.webp",
+         "assets/Kasa-Page-Logement.webp",
+         "assets/Kasa-Page-LogementBungalow.webp",
+         "assets/Kasa-Page-Apropos.webp",
+         "assets/Kasa-Page-404.webp"
       ]
    }
 ]
