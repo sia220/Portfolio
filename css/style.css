@@ -205,7 +205,7 @@ html {
   padding: 30px 100px;
   width: 100%;
   background-color: white;
-  background-image: url(../assets/vagues_1.webp);
+  background-image: url(../assets/vagues.webp);
 }
 @media screen and (max-width: 768px) {
   .projets {
@@ -379,7 +379,7 @@ html {
   padding: 30px 100px;
   color: black;
   background-color: white;
-  background-image: url(../assets/vagues_1.webp);
+  background-image: url(../assets/vagues.webp);
 }
 @media screen and (max-width: 768px) {
   .contact {
