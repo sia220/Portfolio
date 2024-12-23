@@ -9,7 +9,7 @@
       "prefix": " postcss ./css/style.css --use autoprefixer",
       "minify": "postcss ./css/style.css --use cssnano -o ./css/style.min.css",
       "minify-js": "terser ./js/script.js -o ./js/script.min.js --compress --mangle",
-      "compress-webp": "npx imagemin ./assets/**/*.webp --out-dir=./assets-min"
+      "compress-webp": "npx imagemin ./assets/**/*.webp --out-dir=./assets-min --plugin=webp"
    },
    "author": "",
    "license": "ISC",
